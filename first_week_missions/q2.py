@@ -9,6 +9,5 @@ sentence = "way a is there will a is there where"
 split_string = lambda string : string.split()
 reverse_list = lambda original_list : list(reversed(original_list))
 list_to_string = lambda original_list : " ".join(original_list)
-reverse_sentence = lambda sentence :
-(list_to_string(reverse_list(split_string(sentence))))
+reverse_sentence = lambda sentence : (list_to_string(reverse_list(split_string(sentence))))
 print(reverse_sentence(sentence))
