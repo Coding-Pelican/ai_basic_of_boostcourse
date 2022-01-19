@@ -146,6 +146,21 @@ def merge_dict1(dict_1st, dict_2nd):
 print(merge_dict1(dict_1st, dict_2nd)) 
 """
 
+# Q4 - Case 3
+"""
+from collections import Counter
+dict_first = {'사과': 30, '배': 15, '감': 10, '포도': 10}
+dict_second = {'사과': 5, '감': 25, '배': 15, '귤': 25}
+def merge_dict(dict_first, dict_second):
+    counter1 = Counter(dict_first)
+    counter2 = Counter(dict_second)
+    dic_sum = dict(counter1 + counter2)
+    result = sorted(dic_sum.items())
+    result2 = dict(result)
+    print(result2)
+merge_dict(dict_first, dict_second)
+"""
+
 # Q5 - Case 1
 """
 inputs = "cat32dog16cow5"
